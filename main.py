@@ -1,6 +1,8 @@
 from processamento import(
     validar_notas,
     calcular_media,
+    filtrar_recuperacao,
+
 )
 
 def alunos():
@@ -17,9 +19,16 @@ def alunos():
     for nome, notas in dados:
         if validar_notas(notas):
             media = calcular_media(notas)
-            alunos_validos.append((nome))
+            alunos_validos.append((nome, media))  # corrigido
             print(f"{nome}: média de {media}")
         else:
             print(f"Dados inválidos para {nome}")
+
+    recuperacao = filtrar_recuperacao(alunos_validos)
+
+    print("\nAlunos em recuperação:")
+    for nome, media in recuperacao:
+        print(f"{nome} - média: {media}")
+
 
 alunos()

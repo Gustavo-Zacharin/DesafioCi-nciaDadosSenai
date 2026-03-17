@@ -8,4 +8,4 @@ def calcular_media(notas):
     return soma / len(notas)
 
 def filtrar_recuperacao(alunos):
-    return [aluno for aluno in alunos if aluno[1] < 7.0]
+    return [dados for dados in alunos if dados[1] < 7.0]
