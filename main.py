@@ -2,7 +2,7 @@ from processamento import(
     validar_notas,
     calcular_media,
     filtrar_recuperacao,
-
+    encontrar_top_student
 )
 
 def alunos():
@@ -20,7 +20,7 @@ def alunos():
         if validar_notas(notas):
             media = calcular_media(notas)
             alunos_validos.append((nome, media))  # corrigido
-            print(f"{nome}: média de {media}")
+            print(f"{nome}: média de {media:.2f}")
         else:
             print(f"Dados inválidos para {nome}")
 
@@ -28,7 +28,9 @@ def alunos():
 
     print("\nAlunos em recuperação:")
     for nome, media in recuperacao:
-        print(f"{nome} - média: {media}")
+        print(f"{nome} - média: {media:.2f}")
 
+    top = encontrar_top_student(alunos_validos)
+    print(f"\nAluno Destaque: {top}")
 
 alunos()
