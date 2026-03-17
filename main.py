@@ -18,6 +18,7 @@ def alunos():
         if validar_notas(notas):
             media = calcular_media(notas)
             alunos_validos.append((nome))
+            print(f"{nome}: média de {media}")
         else:
             print(f"Dados inválidos para {nome}")
 
