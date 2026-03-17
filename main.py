@@ -1,5 +1,6 @@
 from processamento import(
     validar_notas,
+    calcular_media,
 )
 
 def alunos():
@@ -15,6 +16,9 @@ def alunos():
 
     for nome, notas in dados:
         if validar_notas(notas):
+            media = calcular_media(notas)
             alunos_validos.append((nome))
         else:
             print(f"Dados inválidos para {nome}")
+
+alunos()
