@@ -12,3 +12,18 @@ def filtrar_recuperacao(alunos):
 
 def encontrar_top_student(alunos):
     return max(alunos, key=lambda x: x[1])
+
+def gerar_relatorio(alunos, recuperacao, top):
+    with open("resultado.txt", "w") as arquivo:
+        arquivo.write("RELATÓRIO ACADÊMICO\n\n")
+
+        arquivo.write("Todos os alunos:\n")
+        for nome, media in alunos:
+            arquivo.write(f"{nome}: {media:.2f}\n")
+
+        arquivo.write("\nAlunos em recuperação:\n")
+        for nome, media in recuperacao:
+            arquivo.write(f"{nome}: {media:.2f}\n")
+
+        arquivo.write("\nTop Student:\n")
+        arquivo.write(f"{top[0]}: {top[1]:.2f}\n")
