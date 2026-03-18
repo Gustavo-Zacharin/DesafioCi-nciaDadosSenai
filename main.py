@@ -19,7 +19,7 @@ def alunos():
     for nome, notas in dados:
         if validar_notas(notas):
             media = calcular_media(notas)
-            alunos_validos.append((nome, media))  # corrigido
+            alunos_validos.append((nome, media)) 
             print(f"{nome}: média de {media:.2f}")
         else:
             print(f"Dados inválidos para {nome}")
