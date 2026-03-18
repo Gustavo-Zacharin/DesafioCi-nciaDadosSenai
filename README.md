@@ -15,4 +15,4 @@
 ## DESIGN THINKING - KANBAN ( TRELLO )
  - KANBAN realizado no trello que tem o objetivo de organizar distribuição de tarefas de forma eficiente 
 
-[KANBAN](images/KANBAN.png)
+![KANBAN](images/KANBAN.png)
