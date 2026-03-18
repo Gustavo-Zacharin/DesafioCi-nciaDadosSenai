@@ -1,0 +1,16 @@
+RELATÓRIO ACADÊMICO
+
+Todos os alunos:
+Joseph: 7.14
+Ana: 6.12
+Charlie: 5.58
+Tony: 6.83
+Cristiano: 7.06
+
+Alunos em recuperação:
+Ana: 6.12
+Charlie: 5.58
+Tony: 6.83
+
+Top Student:
+Joseph: 7.14
