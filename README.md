@@ -5,7 +5,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Mapa da Empatia
+## MAPA DE EMPATIA
  - Mapa da Empatia que visa entender as dores da coordenação de Senai que funciona como guia pra desenvolvimento do projeto
 
 ![Mapa da Empatia](images/MapaEmpatia.png)
