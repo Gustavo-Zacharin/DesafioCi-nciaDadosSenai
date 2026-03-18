@@ -2,7 +2,8 @@ from processamento import(
     validar_notas,
     calcular_media,
     filtrar_recuperacao,
-    encontrar_top_student
+    encontrar_top_student,
+    gerar_relatorio
 )
 
 def alunos():
@@ -32,5 +33,7 @@ def alunos():
 
     top = encontrar_top_student(alunos_validos)
     print(f"\nAluno Destaque: {top}")
+
+    gerar_relatorio(alunos_validos, recuperacao, top)
 
 alunos()
